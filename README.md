@@ -1,136 +1,69 @@
-# SB Clean Blog Angular
+# [Start Bootstrap - Clean Blog](https://startbootstrap.com/theme/clean-blog/)
 
-[![Build Status](https://travis-ci.org/StartBootstrap/sb-clean-blog-angular.svg?branch=master)](https://travis-ci.org/StartBootstrap/sb-clean-blog-angular)
+[Clean Blog](https://startbootstrap.com/theme/clean-blog/) is a stylish, responsive blog theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a blog homepage, about page, contact page, and an example post page along with a working PHP contact form.
 
-SB Clean Blog Angular is a free and open-sourced Bootstrap themed Angular 9 starter project.
+## Preview
 
-It shares the same project structure and subset of tooling from our professional offering,
-[SB Admin Pro Angular](https://themes.startbootstrap.com/sb-admin-pro-angular/),
-so much of the [SB Admin Pro Angular Documentation](https://docs.startbootstrap.com/sb-admin-pro-angular/quickstart) is applicable.
+[![Clean Blog Preview](https://assets.startbootstrap.com/img/screenshots/themes/clean-blog.png)](https://startbootstrap.github.io/startbootstrap-clean-blog/)
 
-In particular the documentation for [Structure](https://docs.startbootstrap.com/sb-admin-pro-angular/structure-root-level),
-and the documentation for [SBPro Schematics](https://docs.startbootstrap.com/sb-admin-pro-angular/development-general#sb-pro-schematics)
+**[View Live Preview](https://startbootstrap.github.io/startbootstrap-clean-blog/)**
 
-SB Clean Blog Angular comes with a base implementation of navigation and layouts.
+## Status
 
-For professionally designed components (including an advanced SideNav), 100% code coverage,
-starter cypress tests and more, please consider our professional offering:
-[SB Admin Pro Angular](https://themes.startbootstrap.com/sb-admin-pro-angular/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-clean-blog/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-clean-blog.svg)](https://www.npmjs.com/package/startbootstrap-clean-blog)
+[![Build Status](https://travis-ci.org/StartBootstrap/startbootstrap-clean-blog.svg?branch=master)](https://travis-ci.org/StartBootstrap/startbootstrap-clean-blog)
+[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-clean-blog/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-clean-blog)
+[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-clean-blog/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-clean-blog?type=dev)
 
-## Links
+## Download and Installation
 
-[Click here for demo](https://sb-clean-blog.startbootstrap.com/)
+To begin using this template, choose one of the following options to get started:
 
-[Click here for the backend.](https://github.com/StartBootstrap/sb-clean-blog-node)
-Built with Node.js, Typescript, Fastify, and TypeORM
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/clean-blog/)
+* Install via npm: `npm i startbootstrap-clean-blog`
+* Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-clean-blog.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-clean-blog)
 
-[Click here to view Angular code coverage](https://sb-clean-blog.startbootstrap.com/coverage/sb-clean-blog-angular/index.html)
+## Usage
 
-[Click here to view Node code coverage](https://sb-clean-blog.startbootstrap.com/coverage/sb-clean-blog-node/index.html)
+### Basic Usage
 
-## Quick Start
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-```bash
-git clone git@github.com:startbootstrap/sb-clean-blog-angular.git
-cd sb-clean-blog-angular
-npm install
-npm start
-```
+### Advanced Usage
 
-`npm start` should open a browser window to <http://localhost:4200>
+After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-By default angular runs on port 4200. To change this port you can run:
+#### Gulp Tasks
 
-```bash
-# This starts the development server on port 4205,
-# but you can use any port you'd like
-export PORT=4205 && npm start
-```
+* `gulp` the default task that builds everything
+* `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
+* `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
+* `gulp js` minifies the themes JS file
+* `gulp vendor` copies dependencies from node_modules to the vendor directory
 
-### Why do I not see any posts?
+You must have npm installed globally in order to use this build environment.
 
-Be sure you have [sb-clean-blog-node](https://github.com/StartBootstrap/sb-clean-blog-node) running.
+## Bugs and Issues
 
-### How do I create/update/delete posts?
+Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-clean-blog/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/theme/clean-blog/).
 
-Navigate to <http://localhost:4200/auth/login> 
+## About
 
-Use the password you set in the [sb-clean-blog-node](https://github.com/StartBootstrap/sb-clean-blog-node)
-.env file for: `DB_ROOT_USER_PASSWORD`
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-## Tests
+* <https://startbootstrap.com>
+* <https://twitter.com/SBootstrap>
 
-### Unit Tests
+Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**, Owner of [Blackrock Digital](https://startbootstrap.io/).
 
-```bash
-npm run test
+* <https://davidmiller.io>
+* <https://twitter.com/davidmillerhere>
+* <https://github.com/davidtmiller>
 
-# To keep the test runner going as you devleop tests use:
-npm run test:dev
-```
+Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-### e2e
+## Copyright and License
 
-```bash
-npm run e2e
-
-# To run against currently running server instead of launching a new server
-npm run e2e:running
-```
-
-## Production
-
-SB Clean Blog Angular comes with a production ready Dockerfile and build scripts.
-
-You can get Docker [here](https://www.docker.com/get-started)
-
-```bash
-# Be sure to build the app first
-npm run build
-
-# Then build the docker image
-npm run docker:build
-
-# Then run the image
-npm run docker:run
-```
-
-## Generate Code
-
-```bash
-npm run generate:module -- --path src/modules --name Test
-npm run generate:component -- --path src/modules/test/containers --name Test
-npm run generate:component -- --path src/modules/test/components --name Test
-npm run generate:directive -- --path src/modules/test/directives --name Test
-npm run generate:service -- --path src/modules/test/services --name Test
-```
-
-_Note: Creating a Component and a Container use the same command,
-the difference is just the paths and how they are used._
-
-### MVCC
-
-Containers and Components are both Angular Components, but used in different ways.
-
-Containers should arrange Components.
-
-Obviously this can become subjective, but MVCC is the paradigm that we subscribe to.
-
-## Troubleshooting
-
-### npm start
-
-If you receive memory issues adjust
-`max_old_space_size` in the `ng` command of the `package.json`:
-
-```json
-"ng": "cross-env NODE_OPTIONS=--max_old_space_size=2048 ./node_modules/.bin/ngngu",
-```
-
-You can adjust 2048 to any number you need.
-
-For more information about why you may need `--max_old_space_size`
-see [this article](https://medium.com/@ashleydavis75/node-js-memory-limitations-30d3fe2664c0).
-
-Keep in mind that this project only uses node to build the angular application.
-There is no production dependency on node.
+Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/gh-pages/LICENSE) license.
